@@ -5,12 +5,21 @@ body {
 h1 {
   color: white;
   font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+  margin-top: 5vh;
+  text-align: center;
 }
 
 .container {
   display: flex;
   align-items: center;
   justify-content: center;
+}
+
+img {
+  margin-top: 5vh;
+  width: 100%;
+  max-width: 463px;
+  height: auto;
 }
 
 /*# sourceMappingURL=style.css.map */

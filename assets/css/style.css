@@ -1,0 +1,16 @@
+body {
+  background-color: #2d2346;
+}
+
+h1 {
+  color: white;
+  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+}
+
+.container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/*# sourceMappingURL=style.css.map */

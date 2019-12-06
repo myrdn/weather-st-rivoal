@@ -1,0 +1,22 @@
+@import "variables";
+
+//Background color
+
+body {
+  background-color: $midnight-blue;
+}
+
+//Title
+
+h1 {
+  color: white;
+  font-family: $font-titles;
+}
+
+//Container
+
+.container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}

@@ -42,6 +42,8 @@ request.onload = function () {
 /*     var rain = meteo.rain['1h'];
     if (rain )
     console.log(rain); */
+    var icon = meteo.weather[0].icon;
+    console.log(icon);
 
 }
 

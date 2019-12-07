@@ -1,10 +1,11 @@
+@import url("https://fonts.googleapis.com/css?family=Roboto:300&display=swap");
 body {
   background-color: #2d2346;
 }
 
 h1 {
   color: white;
-  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-family: "Roboto", sans-serif;
   margin-top: 5vh;
   text-align: center;
 }

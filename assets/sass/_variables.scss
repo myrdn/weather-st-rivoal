@@ -5,4 +5,5 @@ $midnight-blue: #2d2346;
 
 //Fonts
 
-$font-titles: "Helvetica Neue", Helvetica, Arial, sans-serif;
+@import url('https://fonts.googleapis.com/css?family=Roboto:300&display=swap');
+$font-titles: 'Roboto', sans-serif;

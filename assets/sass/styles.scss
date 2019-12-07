@@ -20,7 +20,7 @@ body {
 
 //Cover Image
 
-img {
+#cover {
   margin-top: 4vh;
   width: 100%;
   max-width: 453px;
@@ -35,6 +35,13 @@ img {
   font-size: 0.8em;
   text-align: center;
 }
+
+//Icon
+
+#icon-weather {
+  text-align: center;
+}
+
 
 //Container Bubbles
 

@@ -6,6 +6,9 @@ request.send();
 
 request.onload = function () {
     var meteo = request.response;
+    var icon = meteo.weather[0].icon;
+    var imgIcon = document.getElementById("icon-weather");
+    imgIcon.innerHTML = '<img src="http://openweathermap.org/img/w/' + icon + '.png"></img>';
     var temperature = meteo.main['temp'];
     var textTemp = document.getElementById('general');
     textTemp.innerHTML = "Il fait actuellement " + "<b>"+ temperature + "°C</b>";
@@ -42,9 +45,6 @@ request.onload = function () {
 /*     var rain = meteo.rain['1h'];
     if (rain )
     console.log(rain); */
-    var icon = meteo.weather[0].icon;
-    console.log(icon);
-
 }
 
 

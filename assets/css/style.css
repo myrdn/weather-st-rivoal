@@ -30,13 +30,19 @@ img {
   height: auto;
 }
 
+@media only screen and (max-width: 1200px) {
+  .container-bubbles {
+    margin-left: 5% !important;
+    margin-right: 5% !important;
+  }
+}
 .container-bubbles {
   display: flex;
   flex-direction: column;
   align-self: center;
   justify-content: center;
-  margin-left: 40%;
-  margin-right: 40%;
+  margin-left: 30%;
+  margin-right: 30%;
   margin-top: 5vh;
 }
 
@@ -44,8 +50,12 @@ img {
   position: relative;
   background: #d357fe;
   border-radius: 0.4em;
-  width: 15vh;
+  width: 17vh;
   margin-right: auto;
+}
+
+.speech-bubble p {
+  padding: 10px;
 }
 
 .speech-bubble:after {
@@ -67,8 +77,12 @@ img {
   position: relative;
   background: #d357fe;
   border-radius: 0.4em;
-  width: 15vh;
+  width: 17vh;
   margin-left: auto;
+}
+
+.speech-bubble-2 p {
+  padding: 10px;
 }
 
 .speech-bubble-2:after {

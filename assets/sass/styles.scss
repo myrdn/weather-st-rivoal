@@ -4,23 +4,27 @@
 
 body {
   background-color: $midnight-blue;
+  color: white;
+  font-family: $font-titles;
 }
 
 //Title
 
 h1 {
-  color: white;
-  font-family: $font-titles;
   margin-top: 5vh;
   text-align: center;
 }
 
-//Container
+//Containers
 
 .container {
   display: flex;
   align-items: center;
   justify-content: center;
+}
+
+.container-text {
+  text-align: center;
 }
 
 //Cover Image

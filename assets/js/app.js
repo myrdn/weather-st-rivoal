@@ -39,9 +39,9 @@ request.onload = function () {
     } else if (wind > 70) {
         textConseilWind.innerHTML = "C'est la tempête !";
     } 
-    var rain = meteo.rain['1h'];
+/*     var rain = meteo.rain['1h'];
     if (rain )
-    console.log(rain);
+    console.log(rain); */
 
 }
 

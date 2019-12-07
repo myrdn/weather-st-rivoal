@@ -1,5 +1,5 @@
+@charset "utf-8";
 @import "variables";
-@import "fork-awesome.scss";
 
 //Background color
 
@@ -10,11 +10,13 @@ body {
   margin: 0;
 }
 
-//Title
+//Location
 
-h1 {
-  text-align: center;
-  font-weight: 5s0;
+.location {
+    color: rgb(122,122,122);
+    padding: 5px;
+    font-size: 0.8em;
+    text-align: center;
 }
 
 //Containers

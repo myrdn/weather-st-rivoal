@@ -10,15 +10,6 @@ body {
   margin: 0;
 }
 
-//Location
-
-.location {
-  color: rgb(122, 122, 122);
-  padding: 5px;
-  font-size: 0.8em;
-  text-align: center;
-}
-
 //Containers
 
 .container {
@@ -30,10 +21,19 @@ body {
 //Cover Image
 
 img {
-  margin-top: 5vh;
+  margin-top: 4vh;
   width: 100%;
-  max-width: 463px;
+  max-width: 453px;
   height: auto;
+}
+
+//Location
+
+.location {
+  color: rgb(122, 122, 122);
+  padding: 5px;
+  font-size: 0.8em;
+  text-align: center;
 }
 
 //Container Bubbles

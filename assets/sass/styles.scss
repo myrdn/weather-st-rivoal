@@ -27,12 +27,6 @@ body {
   justify-content: center;
 }
 
-//Header 
-
-.header {
-    background-color: rgba(0,0,0,0.5);
-}
-
 //Cover Image
 
 img {
@@ -61,13 +55,14 @@ img {
   margin-top: 5vh;
 }
 
-//Bubbles
+//First Bubble
 
 .speech-bubble {
   position: relative;
   background: $pink-flamingo;
   border-radius: 0.4em;
-  width: 17vh;
+  width: 13vw;
+  min-width: 150px;
   margin-right: auto;
 }
 
@@ -90,11 +85,15 @@ img {
   margin-bottom: -21px;
 }
 
+
+//Second Bubble
+
 .speech-bubble-2 {
   position: relative;
   background: $messages;
   border-radius: 0.4em;
-  width: 17vh;
+  width: 17vw;
+  min-width: 150px;
   margin-left: auto;
 }
 
@@ -116,3 +115,65 @@ img {
   margin-left: -10.5px;
   margin-bottom: -21px;
 }
+
+//Third Bubble
+
+.speech-bubble-3 {
+    position: relative;
+    background: $pink-flamingo;
+    border-radius: 0.4em;
+    width: 15vw;
+    min-width: 140px;
+    margin-right: auto;
+  }
+  
+  .speech-bubble-3 p {
+      padding: 10px;
+  }
+  
+  .speech-bubble-3:after {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    width: 0;
+    height: 0;
+    border: 21px solid transparent;
+    border-top-color: $pink-flamingo;
+    border-bottom: 0;
+    border-left: 0;
+    margin-left: -10.5px;
+    margin-bottom: -21px;
+  }
+
+  //Fourth Bubble
+
+  //Second Bubble
+
+.speech-bubble-4 {
+    position: relative;
+    background: $messages;
+    border-radius: 0.4em;
+    width: 12vw;
+    min-width: 150px;
+    margin-left: auto;
+  }
+  
+  .speech-bubble-4 p {
+      padding: 10px;
+  }
+  
+  .speech-bubble-4:after {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    width: 0;
+    height: 0;
+    border: 21px solid transparent;
+    border-top-color: $messages;
+    border-bottom: 0;
+    border-right: 0;
+    margin-left: -10.5px;
+    margin-bottom: -21px;
+  }

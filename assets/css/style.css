@@ -19,10 +19,6 @@ body {
   justify-content: center;
 }
 
-.header {
-  background-color: rgba(0, 0, 0, 0.5);
-}
-
 img {
   margin-top: 5vh;
   width: 100%;
@@ -50,7 +46,8 @@ img {
   position: relative;
   background: #ca66fa;
   border-radius: 0.4em;
-  width: 17vh;
+  width: 13vw;
+  min-width: 150px;
   margin-right: auto;
 }
 
@@ -77,7 +74,8 @@ img {
   position: relative;
   background: #00bf49;
   border-radius: 0.4em;
-  width: 17vh;
+  width: 17vw;
+  min-width: 150px;
   margin-left: auto;
 }
 
@@ -86,6 +84,62 @@ img {
 }
 
 .speech-bubble-2:after {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  width: 0;
+  height: 0;
+  border: 21px solid transparent;
+  border-top-color: #00bf49;
+  border-bottom: 0;
+  border-right: 0;
+  margin-left: -10.5px;
+  margin-bottom: -21px;
+}
+
+.speech-bubble-3 {
+  position: relative;
+  background: #ca66fa;
+  border-radius: 0.4em;
+  width: 15vw;
+  min-width: 140px;
+  margin-right: auto;
+}
+
+.speech-bubble-3 p {
+  padding: 10px;
+}
+
+.speech-bubble-3:after {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  width: 0;
+  height: 0;
+  border: 21px solid transparent;
+  border-top-color: #ca66fa;
+  border-bottom: 0;
+  border-left: 0;
+  margin-left: -10.5px;
+  margin-bottom: -21px;
+}
+
+.speech-bubble-4 {
+  position: relative;
+  background: #00bf49;
+  border-radius: 0.4em;
+  width: 12vw;
+  min-width: 150px;
+  margin-left: auto;
+}
+
+.speech-bubble-4 p {
+  padding: 10px;
+}
+
+.speech-bubble-4:after {
   content: "";
   position: absolute;
   bottom: 0;

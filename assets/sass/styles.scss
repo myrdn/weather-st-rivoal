@@ -1,20 +1,20 @@
 @import "variables";
+@import "fork-awesome.scss";
 
 //Background color
 
 body {
   background-color: $midnight-blue;
-  background-color: #2d2346;
-  background-image: url("../../images/asfalt-light.png");
   color: white;
   font-family: $font-titles;
+  margin: 0;
 }
 
 //Title
 
 h1 {
-  margin-top: 5vh;
   text-align: center;
+  font-weight: 5s0;
 }
 
 //Containers
@@ -25,9 +25,10 @@ h1 {
   justify-content: center;
 }
 
-.container-text {
-  margin-top: 5vh;
-  text-align: center;
+//Header 
+
+.header {
+    background-color: rgba(0,0,0,0.5);
 }
 
 //Cover Image
@@ -62,7 +63,7 @@ img {
 
 .speech-bubble {
   position: relative;
-  background: #d357fe;
+  background: $pink-flamingo;
   border-radius: 0.4em;
   width: 17vh;
   margin-right: auto;
@@ -80,7 +81,7 @@ img {
   width: 0;
   height: 0;
   border: 21px solid transparent;
-  border-top-color: #d357fe;
+  border-top-color: $pink-flamingo;
   border-bottom: 0;
   border-left: 0;
   margin-left: -10.5px;
@@ -89,7 +90,7 @@ img {
 
 .speech-bubble-2 {
   position: relative;
-  background: #d357fe;
+  background: $messages;
   border-radius: 0.4em;
   width: 17vh;
   margin-left: auto;
@@ -107,7 +108,7 @@ img {
   width: 0;
   height: 0;
   border: 21px solid transparent;
-  border-top-color: #d357fe;
+  border-top-color: $messages;
   border-bottom: 0;
   border-right: 0;
   margin-left: -10.5px;

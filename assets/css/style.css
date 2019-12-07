@@ -1,103 +1,17 @@
-@import url("https://fonts.googleapis.com/css?family=Roboto:300&display=swap");
-body {
-  background-color: #2d2346;
-  background-color: #2d2346;
-  background-image: url("../../images/asfalt-light.png");
-  color: white;
-  font-family: "Roboto", sans-serif;
-}
+/* Error: Undefined variable.
+ *   ,
+ * 7 |   background-color: $midnight-blue;
+ *   |                     ^^^^^^^^^^^^^^
+ *   '
+ *   assets/sass/styles.scss 7:21  root stylesheet */
 
-h1 {
-  margin-top: 5vh;
-  text-align: center;
+body::before {
+  font-family: "Source Code Pro", "SF Mono", Monaco, Inconsolata, "Fira Mono",
+      "Droid Sans Mono", monospace, monospace;
+  white-space: pre;
+  display: block;
+  padding: 1em;
+  margin-bottom: 1em;
+  border-bottom: 2px solid black;
+  content: "Error: Undefined variable.\a   \2577 \a 7 \2502    background-color: $midnight-blue;\a   \2502                      ^^^^^^^^^^^^^^\a   \2575 \a   assets/sass/styles.scss 7:21  root stylesheet";
 }
-
-.container {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-}
-
-.container-text {
-  margin-top: 5vh;
-  text-align: center;
-}
-
-img {
-  margin-top: 5vh;
-  width: 100%;
-  max-width: 463px;
-  height: auto;
-}
-
-@media only screen and (max-width: 1200px) {
-  .container-bubbles {
-    margin-left: 5% !important;
-    margin-right: 5% !important;
-  }
-}
-.container-bubbles {
-  display: flex;
-  flex-direction: column;
-  align-self: center;
-  justify-content: center;
-  margin-left: 30%;
-  margin-right: 30%;
-  margin-top: 5vh;
-}
-
-.speech-bubble {
-  position: relative;
-  background: #d357fe;
-  border-radius: 0.4em;
-  width: 17vh;
-  margin-right: auto;
-}
-
-.speech-bubble p {
-  padding: 10px;
-}
-
-.speech-bubble:after {
-  content: "";
-  position: absolute;
-  bottom: 0;
-  left: 50%;
-  width: 0;
-  height: 0;
-  border: 21px solid transparent;
-  border-top-color: #d357fe;
-  border-bottom: 0;
-  border-left: 0;
-  margin-left: -10.5px;
-  margin-bottom: -21px;
-}
-
-.speech-bubble-2 {
-  position: relative;
-  background: #d357fe;
-  border-radius: 0.4em;
-  width: 17vh;
-  margin-left: auto;
-}
-
-.speech-bubble-2 p {
-  padding: 10px;
-}
-
-.speech-bubble-2:after {
-  content: "";
-  position: absolute;
-  bottom: 0;
-  left: 50%;
-  width: 0;
-  height: 0;
-  border: 21px solid transparent;
-  border-top-color: #d357fe;
-  border-bottom: 0;
-  border-right: 0;
-  margin-left: -10.5px;
-  margin-bottom: -21px;
-}
-
-/*# sourceMappingURL=style.css.map */

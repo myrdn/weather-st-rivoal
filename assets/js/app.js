@@ -13,8 +13,14 @@ request.onload = function () {
     if (temperature <= 0) {
         texteConseil.innerHTML = "Il gèle rentre ta verveine";
     } else if (temperature <= 12) {
-        texteConseil.innerHTML = "Prend ton bonnet si tu vas te balader sur les crêtes."
-    } 
+        texteConseil.innerHTML = "Prends ton bonnet si tu vas te balader sur les crêtes."
+    } else if (temperature <= 15) {
+        texteConseil.innerHTML = "Mieux vaut garder ta veste pour grimper au Menez Mikael";
+    } else if (temperature > 15) {
+        texteConseil.innerHTML = "Un tour du Drennec en t-shirt ?";
+    } else if (temperature > 20) {
+        texteConseil.innerHTML = "En voiture direction la plage !";
+    }
 
 }
 

@@ -4,6 +4,8 @@
 
 body {
   background-color: $midnight-blue;
+  background-color: #2d2346;
+  background-image: url("../../images/asfalt-light.png");
   color: white;
   font-family: $font-titles;
 }
@@ -24,6 +26,7 @@ h1 {
 }
 
 .container-text {
+  margin-top: 5vh;
   text-align: center;
 }
 
@@ -34,4 +37,64 @@ img {
   width: 100%;
   max-width: 463px;
   height: auto;
+}
+
+//Container Bubbles
+
+.container-bubbles {
+  display: flex;
+  flex-direction: column;
+  align-self: center;
+  justify-content: center;
+  margin-left: 40%;
+  margin-right: 40%;
+  margin-top: 5vh;
+}
+
+//Bubbles
+
+.speech-bubble {
+  position: relative;
+  background: #d357fe;
+  border-radius: 0.4em;
+  width: 15vh;
+  margin-right: auto;
+}
+
+.speech-bubble:after {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  width: 0;
+  height: 0;
+  border: 21px solid transparent;
+  border-top-color: #d357fe;
+  border-bottom: 0;
+  border-left: 0;
+  margin-left: -10.5px;
+  margin-bottom: -21px;
+}
+
+.speech-bubble-2 {
+  position: relative;
+  background: #d357fe;
+  border-radius: 0.4em;
+  width: 15vh;
+  margin-left: auto;
+}
+
+.speech-bubble-2:after {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  width: 0;
+  height: 0;
+  border: 21px solid transparent;
+  border-top-color: #d357fe;
+  border-bottom: 0;
+  border-right: 0;
+  margin-left: -10.5px;
+  margin-bottom: -21px;
 }

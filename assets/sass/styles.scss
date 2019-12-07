@@ -13,10 +13,10 @@ body {
 //Location
 
 .location {
-    color: rgb(122,122,122);
-    padding: 5px;
-    font-size: 0.8em;
-    text-align: center;
+  color: rgb(122, 122, 122);
+  padding: 5px;
+  font-size: 0.8em;
+  text-align: center;
 }
 
 //Containers
@@ -64,10 +64,15 @@ img {
   width: 13vw;
   min-width: 150px;
   margin-right: auto;
+  transition: transform 0.2s;
+}
+
+.speech-bubble:hover {
+  transform: scale(1.1);
 }
 
 .speech-bubble p {
-    padding: 10px;
+  padding: 10px;
 }
 
 .speech-bubble:after {
@@ -85,7 +90,6 @@ img {
   margin-bottom: -21px;
 }
 
-
 //Second Bubble
 
 .speech-bubble-2 {
@@ -95,10 +99,15 @@ img {
   width: 17vw;
   min-width: 150px;
   margin-left: auto;
+  transition: transform 0.2s;
+}
+
+.speech-bubble-2:hover {
+  transform: scale(1.1);
 }
 
 .speech-bubble-2 p {
-    padding: 10px;
+  padding: 10px;
 }
 
 .speech-bubble-2:after {
@@ -119,61 +128,69 @@ img {
 //Third Bubble
 
 .speech-bubble-3 {
-    position: relative;
-    background: $pink-flamingo;
-    border-radius: 0.4em;
-    width: 15vw;
-    min-width: 140px;
-    margin-right: auto;
-  }
-  
-  .speech-bubble-3 p {
-      padding: 10px;
-  }
-  
-  .speech-bubble-3:after {
-    content: "";
-    position: absolute;
-    bottom: 0;
-    left: 50%;
-    width: 0;
-    height: 0;
-    border: 21px solid transparent;
-    border-top-color: $pink-flamingo;
-    border-bottom: 0;
-    border-left: 0;
-    margin-left: -10.5px;
-    margin-bottom: -21px;
-  }
+  position: relative;
+  background: $pink-flamingo;
+  border-radius: 0.4em;
+  width: 15vw;
+  min-width: 140px;
+  margin-right: auto;
+  transition: transform 0.2s;
+}
 
-  //Fourth Bubble
+.speech-bubble-3:hover {
+  transform: scale(1.1);
+}
 
-  //Second Bubble
+.speech-bubble-3 p {
+  padding: 10px;
+}
+
+.speech-bubble-3:after {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  width: 0;
+  height: 0;
+  border: 21px solid transparent;
+  border-top-color: $pink-flamingo;
+  border-bottom: 0;
+  border-left: 0;
+  margin-left: -10.5px;
+  margin-bottom: -21px;
+}
+
+//Fourth Bubble
 
 .speech-bubble-4 {
-    position: relative;
-    background: $messages;
-    border-radius: 0.4em;
-    width: 12vw;
-    min-width: 150px;
-    margin-left: auto;
-  }
-  
-  .speech-bubble-4 p {
-      padding: 10px;
-  }
-  
-  .speech-bubble-4:after {
-    content: "";
-    position: absolute;
-    bottom: 0;
-    left: 50%;
-    width: 0;
-    height: 0;
-    border: 21px solid transparent;
-    border-top-color: $messages;
-    border-bottom: 0;
-    border-right: 0;
-    margin-left: -10.5px;
-    margin-bottom: -21px;
-  }
+  position: relative;
+  background: $messages;
+  border-radius: 0.4em;
+  width: 12vw;
+  min-width: 150px;
+  margin-left: auto;
+  transition: transform 0.2s;
+}
+
+.speech-bubble-4:hover {
+    transform: scale(1.1);
+}
+
+.speech-bubble-4 p {
+  padding: 10px;
+}
+
+.speech-bubble-4:after {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  width: 0;
+  height: 0;
+  border: 21px solid transparent;
+  border-top-color: $messages;
+  border-bottom: 0;
+  border-right: 0;
+  margin-left: -10.5px;
+  margin-bottom: -21px;
+}

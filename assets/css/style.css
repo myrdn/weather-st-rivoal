@@ -46,14 +46,26 @@ body {
   margin-top: 4vh;
 }
 
-.speech-bubble {
+.speech-bubble-5, .speech-bubble-3, .speech-bubble {
   position: relative;
-  background: #ca66fa;
   border-radius: 0.4em;
-  width: 13vw;
   min-width: 150px;
   margin-right: auto;
   transition: transform 0.2s;
+  background: #ca66fa;
+}
+
+.speech-bubble-6, .speech-bubble-4, .speech-bubble-2 {
+  position: relative;
+  border-radius: 0.4em;
+  min-width: 150px;
+  margin-left: auto;
+  transition: transform 0.2s;
+  background: #00bf49;
+}
+
+.speech-bubble {
+  width: 13vw;
 }
 
 .speech-bubble:hover {
@@ -80,13 +92,7 @@ body {
 }
 
 .speech-bubble-2 {
-  position: relative;
-  background: #00bf49;
-  border-radius: 0.4em;
   width: 17vw;
-  min-width: 150px;
-  margin-left: auto;
-  transition: transform 0.2s;
 }
 
 .speech-bubble-2:hover {
@@ -113,13 +119,7 @@ body {
 }
 
 .speech-bubble-3 {
-  position: relative;
-  background: #ca66fa;
-  border-radius: 0.4em;
   width: 15vw;
-  min-width: 140px;
-  margin-right: auto;
-  transition: transform 0.2s;
 }
 
 .speech-bubble-3:hover {
@@ -146,13 +146,7 @@ body {
 }
 
 .speech-bubble-4 {
-  position: relative;
-  background: #00bf49;
-  border-radius: 0.4em;
   width: 12vw;
-  min-width: 150px;
-  margin-left: auto;
-  transition: transform 0.2s;
 }
 
 .speech-bubble-4:hover {
@@ -179,13 +173,7 @@ body {
 }
 
 .speech-bubble-5 {
-  position: relative;
-  background: #ca66fa;
-  border-radius: 0.4em;
   width: 9vw;
-  min-width: 140px;
-  margin-right: auto;
-  transition: transform 0.2s;
 }
 
 .speech-bubble-5:hover {
@@ -212,13 +200,7 @@ body {
 }
 
 .speech-bubble-6 {
-  position: relative;
-  background: #00bf49;
-  border-radius: 0.4em;
   width: 14vw;
-  min-width: 150px;
-  margin-left: auto;
-  transition: transform 0.2s;
 }
 
 .speech-bubble-6:hover {

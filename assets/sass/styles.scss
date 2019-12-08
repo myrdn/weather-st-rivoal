@@ -42,7 +42,6 @@ body {
   text-align: center;
 }
 
-
 //Container Bubbles
 
 @media only screen and (max-width: 1200px) {
@@ -62,16 +61,31 @@ body {
   margin-top: 4vh;
 }
 
-//First Bubble
+//Bubbles
 
-.speech-bubble {
+%bubbles-left {
   position: relative;
-  background: $pink-flamingo;
   border-radius: 0.4em;
-  width: 13vw;
   min-width: 150px;
   margin-right: auto;
   transition: transform 0.2s;
+  background: $pink-flamingo;
+}
+
+%bubbles-right {
+  position: relative;
+  border-radius: 0.4em;
+  min-width: 150px;
+  margin-left: auto;
+  transition: transform 0.2s;
+  background: $messages;
+}
+
+//First Bubble
+
+.speech-bubble {
+  @extend %bubbles-left;
+  width: 13vw;
 }
 
 .speech-bubble:hover {
@@ -100,13 +114,8 @@ body {
 //Second Bubble
 
 .speech-bubble-2 {
-  position: relative;
-  background: $messages;
-  border-radius: 0.4em;
+  @extend %bubbles-right;
   width: 17vw;
-  min-width: 150px;
-  margin-left: auto;
-  transition: transform 0.2s;
 }
 
 .speech-bubble-2:hover {
@@ -135,13 +144,8 @@ body {
 //Third Bubble
 
 .speech-bubble-3 {
-  position: relative;
-  background: $pink-flamingo;
-  border-radius: 0.4em;
+  @extend %bubbles-left;
   width: 15vw;
-  min-width: 140px;
-  margin-right: auto;
-  transition: transform 0.2s;
 }
 
 .speech-bubble-3:hover {
@@ -170,17 +174,12 @@ body {
 //Fourth Bubble
 
 .speech-bubble-4 {
-  position: relative;
-  background: $messages;
-  border-radius: 0.4em;
+  @extend %bubbles-right;
   width: 12vw;
-  min-width: 150px;
-  margin-left: auto;
-  transition: transform 0.2s;
 }
 
 .speech-bubble-4:hover {
-    transform: scale(1.1);
+  transform: scale(1.1);
 }
 
 .speech-bubble-4 p {
@@ -205,13 +204,8 @@ body {
 //Fifth Bubble
 
 .speech-bubble-5 {
-  position: relative;
-  background: $pink-flamingo;
-  border-radius: 0.4em;
+  @extend %bubbles-left;
   width: 9vw;
-  min-width: 140px;
-  margin-right: auto;
-  transition: transform 0.2s;
 }
 
 .speech-bubble-5:hover {
@@ -240,17 +234,12 @@ body {
 //Sixt Bubble
 
 .speech-bubble-6 {
-  position: relative;
-  background: $messages;
-  border-radius: 0.4em;
+  @extend %bubbles-right;
   width: 14vw;
-  min-width: 150px;
-  margin-left: auto;
-  transition: transform 0.2s;
 }
 
 .speech-bubble-6:hover {
-    transform: scale(1.1);
+  transform: scale(1.1);
 }
 
 .speech-bubble-6 p {

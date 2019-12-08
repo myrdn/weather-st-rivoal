@@ -5,9 +5,8 @@ request.open('GET', requestURL);
 request.responseType = 'json';
 request.send();
 
-
-request.onload = function () {
-    var meteo = request.response;
+//About temperature
+function temp() {
     var temperature = meteo.main['temp'];
     var textTemp = document.getElementById('general');
     textTemp.innerHTML = "Il fait actuellement " + "<b>" + temperature + "°C</b>";
@@ -25,6 +24,10 @@ request.onload = function () {
     } else if (temperature > 20) {
         textConseil.innerHTML = "En voiture direction la plage !";
     }
+}
+
+//About wind speed
+function windy() {
     var wind = meteo.wind['speed'];
     wind = Math.round(3600 * wind / 1000);
     var textWind = document.getElementById('wind');
@@ -41,9 +44,13 @@ request.onload = function () {
     } else if (wind > 70) {
         textConseilWind.innerHTML = "C'est la tempête !";
     }
+}
+
+//About rain precipitations
+function precipitation() {
     var textRain = document.getElementById('rain');
     var textConseilRain = document.getElementById('conseils-rain');
-    if (meteo.rain['3h'] !== undefined) {
+    if (meteo.rain !== undefined) {
         var rain = meteo.rain['3h'];
         textRain.innerHTML = rain + " mm de pluie sont tombés";
         if (rain <= 3) {
@@ -57,6 +64,14 @@ request.onload = function () {
         textRain.innerHTML = "Pas de pluie !";
         textConseilRain.innerHTML = "On apprécie.";
     }
+}
+
+//Main function
+request.onload = function () {
+    meteo = request.response;
+    temp();
+    windy();
+    precipitation();
 }
 
 

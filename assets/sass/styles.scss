@@ -171,7 +171,7 @@ body {
 
 .speech-bubble-4 {
   @extend %bubbles-right;
-  animation-delay: 5s;
+  animation-delay: 5+0.5s;
 }
 
 .speech-bubble-4 p {
@@ -186,7 +186,7 @@ body {
 
 .speech-bubble-5 {
   @extend %bubbles-left;
-  animation-delay: 6.5s;
+  animation-delay: 6.5+0.5s;
 }
 
 .speech-bubble-5 p {
@@ -201,7 +201,7 @@ body {
 
 .speech-bubble-6 {
   @extend %bubbles-right;
-  animation-delay: 7s;
+  animation-delay: 8s;
 }
 
 .speech-bubble-6 p {
@@ -216,7 +216,7 @@ body {
 
 .speech-bubble-7 {
   @extend %bubbles-left;
-  animation-delay: 7.8s;
+  animation-delay: 9.2s;
 }
 
 .speech-bubble-7 p {

@@ -81,6 +81,36 @@ body {
   background: $messages;
 }
 
+%bubbles-after-left {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  width: 0;
+  height: 0;
+  border: 21px solid transparent;
+  border-top-color: $pink-flamingo;
+  border-bottom: 0;
+  border-left: 0;
+  margin-left: -10.5px;
+  margin-bottom: -21px;
+}
+
+%bubbles-after-right {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  width: 0;
+  height: 0;
+  border: 21px solid transparent;
+  border-top-color: $messages;
+  border-bottom: 0;
+  border-right: 0;
+  margin-left: -10.5px;
+  margin-bottom: -21px;
+}
+
 //First Bubble
 
 .speech-bubble {
@@ -97,18 +127,7 @@ body {
 }
 
 .speech-bubble:after {
-  content: "";
-  position: absolute;
-  bottom: 0;
-  left: 50%;
-  width: 0;
-  height: 0;
-  border: 21px solid transparent;
-  border-top-color: $pink-flamingo;
-  border-bottom: 0;
-  border-left: 0;
-  margin-left: -10.5px;
-  margin-bottom: -21px;
+  @extend %bubbles-after-left;
 }
 
 //Second Bubble
@@ -127,18 +146,7 @@ body {
 }
 
 .speech-bubble-2:after {
-  content: "";
-  position: absolute;
-  bottom: 0;
-  left: 50%;
-  width: 0;
-  height: 0;
-  border: 21px solid transparent;
-  border-top-color: $messages;
-  border-bottom: 0;
-  border-right: 0;
-  margin-left: -10.5px;
-  margin-bottom: -21px;
+  @extend %bubbles-after-right;
 }
 
 //Third Bubble
@@ -157,18 +165,7 @@ body {
 }
 
 .speech-bubble-3:after {
-  content: "";
-  position: absolute;
-  bottom: 0;
-  left: 50%;
-  width: 0;
-  height: 0;
-  border: 21px solid transparent;
-  border-top-color: $pink-flamingo;
-  border-bottom: 0;
-  border-left: 0;
-  margin-left: -10.5px;
-  margin-bottom: -21px;
+  @extend %bubbles-after-left;
 }
 
 //Fourth Bubble
@@ -187,18 +184,7 @@ body {
 }
 
 .speech-bubble-4:after {
-  content: "";
-  position: absolute;
-  bottom: 0;
-  left: 50%;
-  width: 0;
-  height: 0;
-  border: 21px solid transparent;
-  border-top-color: $messages;
-  border-bottom: 0;
-  border-right: 0;
-  margin-left: -10.5px;
-  margin-bottom: -21px;
+  @extend %bubbles-after-right;
 }
 
 //Fifth Bubble
@@ -217,18 +203,7 @@ body {
 }
 
 .speech-bubble-5:after {
-  content: "";
-  position: absolute;
-  bottom: 0;
-  left: 50%;
-  width: 0;
-  height: 0;
-  border: 21px solid transparent;
-  border-top-color: $pink-flamingo;
-  border-bottom: 0;
-  border-left: 0;
-  margin-left: -10.5px;
-  margin-bottom: -21px;
+  @extend %bubbles-after-left;
 }
 
 //Sixt Bubble
@@ -247,16 +222,5 @@ body {
 }
 
 .speech-bubble-6:after {
-  content: "";
-  position: absolute;
-  bottom: 0;
-  left: 50%;
-  width: 0;
-  height: 0;
-  border: 21px solid transparent;
-  border-top-color: $messages;
-  border-bottom: 0;
-  border-right: 0;
-  margin-left: -10.5px;
-  margin-bottom: -21px;
+  @extend %bubbles-after-right;
 }

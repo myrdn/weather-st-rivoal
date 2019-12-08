@@ -42,9 +42,12 @@ request.onload = function () {
     } else if (wind > 70) {
         textConseilWind.innerHTML = "C'est la tempête !";
     } 
-/*     var rain = meteo.rain['1h'];
-    if (rain )
-    console.log(rain); */
+    if (meteo.rain['1h'] !== undefined) {
+    var rain = meteo.rain['3h'];
+    console.log(rain);
+    } else {
+        console.log("il ne pleut pas!");
+    }
 }
 
 

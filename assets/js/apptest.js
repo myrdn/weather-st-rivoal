@@ -5,10 +5,19 @@ request.open('GET', requestURL);
 request.responseType = 'json';
 request.send();
 
+//Variables
+
+var meteo = request.response;
+var icon = meteo.weather[0].icon;
+var temperature = meteo.main['temp'];
+var wind = meteo.wind['speed'];
 
 request.onload = function () {
-    var meteo = request.response;
-    var temperature = meteo.main['temp'];
+    
+    
+    var imgIcon = document.getElementById("icon-weather");
+    imgIcon.innerHTML = '<img src="http://openweathermap.org/img/w/' + icon + '.png"></img>';
+    
     var textTemp = document.getElementById('general');
     textTemp.innerHTML = "Il fait actuellement " + "<b>" + temperature + "°C</b>";
     var textConseil = document.getElementById('conseils');
@@ -25,7 +34,7 @@ request.onload = function () {
     } else if (temperature > 20) {
         textConseil.innerHTML = "En voiture direction la plage !";
     }
-    var wind = meteo.wind['speed'];
+    
     wind = Math.round(3600 * wind / 1000);
     var textWind = document.getElementById('wind');
     textWind.innerHTML = "Le vent souffle à " + "<b>" + wind + "km/h</b>";

@@ -71,7 +71,6 @@ body {
   margin-right: auto;
   margin-left: 10px;
   margin-bottom: 20px;
-  transition: transform 0.2s;
   background: $pink-flamingo;
   width: auto;
 }
@@ -84,7 +83,6 @@ body {
   margin-right: 10px;
   margin-left: auto;
   margin-bottom: 20px;
-  transition: transform 0.2s;
   background: $messages;
   width: auto;
 }
@@ -125,10 +123,6 @@ body {
   @extend %bubbles-left;
 }
 
-.speech-bubble:hover {
-  transform: scale(1.1);
-}
-
 .speech-bubble p {
   padding: 10px;
 }
@@ -141,10 +135,6 @@ body {
 
 .speech-bubble-2 {
   @extend %bubbles-right;
-}
-
-.speech-bubble-2:hover {
-  transform: scale(1.1);
 }
 
 .speech-bubble-2 p {
@@ -161,10 +151,6 @@ body {
   @extend %bubbles-left;
 }
 
-.speech-bubble-3:hover {
-  transform: scale(1.1);
-}
-
 .speech-bubble-3 p {
   padding: 10px;
 }
@@ -177,10 +163,6 @@ body {
 
 .speech-bubble-4 {
   @extend %bubbles-right;
-}
-
-.speech-bubble-4:hover {
-  transform: scale(1.1);
 }
 
 .speech-bubble-4 p {
@@ -197,10 +179,6 @@ body {
   @extend %bubbles-left;
 }
 
-.speech-bubble-5:hover {
-  transform: scale(1.1);
-}
-
 .speech-bubble-5 p {
   padding: 10px;
 }
@@ -213,10 +191,6 @@ body {
 
 .speech-bubble-6 {
   @extend %bubbles-right;
-}
-
-.speech-bubble-6:hover {
-  transform: scale(1.1);
 }
 
 .speech-bubble-6 p {

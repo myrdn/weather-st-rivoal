@@ -54,7 +54,6 @@ body {
   margin-right: auto;
   margin-left: 10px;
   margin-bottom: 20px;
-  transition: transform 0.2s;
   background: #ca66fa;
   width: auto;
 }
@@ -67,7 +66,6 @@ body {
   margin-right: 10px;
   margin-left: auto;
   margin-bottom: 20px;
-  transition: transform 0.2s;
   background: #00bf49;
   width: auto;
 }
@@ -102,48 +100,24 @@ body {
   margin-right: -20px;
 }
 
-.speech-bubble:hover {
-  transform: scale(1.1);
-}
-
 .speech-bubble p {
   padding: 10px;
-}
-
-.speech-bubble-2:hover {
-  transform: scale(1.1);
 }
 
 .speech-bubble-2 p {
   padding: 10px;
 }
 
-.speech-bubble-3:hover {
-  transform: scale(1.1);
-}
-
 .speech-bubble-3 p {
   padding: 10px;
-}
-
-.speech-bubble-4:hover {
-  transform: scale(1.1);
 }
 
 .speech-bubble-4 p {
   padding: 10px;
 }
 
-.speech-bubble-5:hover {
-  transform: scale(1.1);
-}
-
 .speech-bubble-5 p {
   padding: 10px;
-}
-
-.speech-bubble-6:hover {
-  transform: scale(1.1);
 }
 
 .speech-bubble-6 p {

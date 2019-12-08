@@ -44,9 +44,9 @@ request.onload = function () {
     }
     var textRain = document.getElementById('rain');
     var textConseilRain = document.getElementById('conseils-rain');
-    if (meteo.rain['1h'] !== undefined) {
-        var rain = meteo.rain['1h'];
-        textRain.innerHTML = rain + " mm de pluie sont tombés dans l'heure";
+    if (meteo.rain['3h'] !== undefined) {
+        var rain = meteo.rain['3h'];
+        textRain.innerHTML = rain + " mm de pluie sont tombés";
         if (rain <= 3) {
             textConseilRain.innerHTML = "Bon il faut prendre un K-Way";
         } else if (rain <= 7) {

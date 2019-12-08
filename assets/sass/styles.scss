@@ -207,3 +207,18 @@ body {
 .speech-bubble-6:after {
   @extend %bubbles-after-right;
 }
+
+//Seventh Bubble
+
+.speech-bubble-7 {
+  @extend %bubbles-left;
+  animation-delay: 7s;
+}
+
+.speech-bubble-7 p {
+  padding: 10px;
+}
+
+.speech-bubble-7:after {
+  @extend %bubbles-after-left;
+}

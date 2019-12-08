@@ -42,7 +42,7 @@ body {
   margin-right: auto;
 }
 
-.speech-bubble-5, .speech-bubble-3, .speech-bubble, .welcome-bubble {
+.speech-bubble-7, .speech-bubble-5, .speech-bubble-3, .speech-bubble, .welcome-bubble {
   position: relative;
   border-radius: 0.4em;
   max-width: 300px;
@@ -64,7 +64,7 @@ body {
   width: auto;
 }
 
-.speech-bubble-5:after, .speech-bubble-3:after, .speech-bubble:after, .welcome-bubble:after {
+.speech-bubble-7:after, .speech-bubble-5:after, .speech-bubble-3:after, .speech-bubble:after, .welcome-bubble:after {
   content: "";
   position: absolute;
   left: 0;
@@ -123,6 +123,14 @@ body {
 }
 
 .speech-bubble-6 p {
+  padding: 10px;
+}
+
+.speech-bubble-7 {
+  animation-delay: 7s;
+}
+
+.speech-bubble-7 p {
   padding: 10px;
 }
 

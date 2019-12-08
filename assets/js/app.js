@@ -74,8 +74,36 @@ request.onload = () => {
     precipitation();
 }
 
+//Visibilize hidden elements
+function visibilize() {
+    var element = document.getElementById("anchor");
+    element.scrollIntoView({ behavior: "smooth", block: "end", inline: "nearest" });
+}
 
+//Check if element is in viewport
+function isElementInViewport(el) {
+    var rect = el.getBoundingClientRect();
+    return (
+        rect.top >= 0 &&
+        rect.left >= 0 &&
+        rect.bottom <= (window.innerHeight || document.documentElement.clientHeight) &&
+        rect.right <= (window.innerWidth || document.documentElement.clientWidth)
+    );
+}
 
+//For loop bubbles
+const bubbles = document.querySelectorAll(".bubble");
+for (i = 0; i < bubbles.length; i++){
+var el = bubbles[i];
+console.log(el);
+}
 
+function checkAndGo() {
+    if (isElementInViewport(el));
+    else {
+        el.setAttribute("id", "anchor");
+        visibilize();
+    }
+} 
 
-
+setTimeout(function () { checkAndGo(); }, 10000);

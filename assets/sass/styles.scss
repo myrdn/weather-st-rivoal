@@ -201,3 +201,73 @@ body {
   margin-left: -10.5px;
   margin-bottom: -21px;
 }
+
+//Fifth Bubble
+
+.speech-bubble-5 {
+  position: relative;
+  background: $pink-flamingo;
+  border-radius: 0.4em;
+  width: 15vw;
+  min-width: 140px;
+  margin-right: auto;
+  transition: transform 0.2s;
+}
+
+.speech-bubble-5:hover {
+  transform: scale(1.1);
+}
+
+.speech-bubble-5 p {
+  padding: 10px;
+}
+
+.speech-bubble-5:after {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  width: 0;
+  height: 0;
+  border: 21px solid transparent;
+  border-top-color: $pink-flamingo;
+  border-bottom: 0;
+  border-left: 0;
+  margin-left: -10.5px;
+  margin-bottom: -21px;
+}
+
+//Sixt Bubble
+
+.speech-bubble-6 {
+  position: relative;
+  background: $messages;
+  border-radius: 0.4em;
+  width: 12vw;
+  min-width: 150px;
+  margin-left: auto;
+  transition: transform 0.2s;
+}
+
+.speech-bubble-6:hover {
+    transform: scale(1.1);
+}
+
+.speech-bubble-6 p {
+  padding: 10px;
+}
+
+.speech-bubble-6:after {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  width: 0;
+  height: 0;
+  border: 21px solid transparent;
+  border-top-color: $messages;
+  border-bottom: 0;
+  border-right: 0;
+  margin-left: -10.5px;
+  margin-bottom: -21px;
+}

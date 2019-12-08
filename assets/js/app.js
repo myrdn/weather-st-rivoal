@@ -54,7 +54,7 @@ function precipitation() {
         const rain = meteo.rain['3h'];
         textRain.innerHTML = `${rain} mm de pluie sont tombés`;
         if (rain <= 3) {
-            textConseilRain.innerHTML = "Bon il faut prendre un K-Way";
+            textConseilRain.innerHTML = "Bon il faut prendre un imperméable";
         } else if (rain <= 7) {
             textConseilRain.innerHTML = "T'as un parapluie ?";
         } else if (rain >= 8) {
@@ -109,5 +109,5 @@ function checkAndGo() {
     }
 } 
 
-setTimeout(function () { checkAndGo(); }, 3800);
+setTimeout(function () { checkAndGo(); }, 2900);
 

@@ -76,13 +76,13 @@ request.onload = () => {
 
 //Visibilize hidden elements
 function visibilize() {
-    var element = document.getElementById("anchor");
+    const element = document.getElementById("anchor");
     element.scrollIntoView({ behavior: "smooth" });
 }
 
 //Check if element is in viewport
 function isElementInViewport(el) {
-    var rect = el.getBoundingClientRect();
+    const rect = el.getBoundingClientRect();
     return (
         rect.top >= 0 &&
         rect.left >= 0 &&
@@ -109,5 +109,5 @@ function checkAndGo() {
     }
 } 
 
-setTimeout(function () { checkAndGo(); }, 2900);
+setTimeout(() => { checkAndGo(); }, 2900);
 

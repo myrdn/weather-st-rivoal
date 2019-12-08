@@ -30,10 +30,9 @@ body {
   text-align: center;
 }
 
-@media only screen and (max-width: 1200px) {
+@media only screen and (max-width: 450px) {
   .container-bubbles {
-    margin-left: 5% !important;
-    margin-right: 5% !important;
+    width: 90% !important;
   }
 }
 .container-bubbles {
@@ -41,8 +40,9 @@ body {
   flex-direction: column;
   align-self: center;
   justify-content: center;
-  margin-left: 30%;
-  margin-right: 30%;
+  width: 400px;
+  margin-left: auto;
+  margin-right: auto;
   margin-top: 4vh;
 }
 
@@ -53,7 +53,7 @@ body {
   max-width: 300px;
   margin-right: auto;
   margin-left: 10px;
-  margin-bottom: 20px;
+  margin-bottom: 15px;
   background: #ca66fa;
   width: auto;
 }
@@ -65,7 +65,7 @@ body {
   max-width: 300px;
   margin-right: 10px;
   margin-left: auto;
-  margin-bottom: 20px;
+  margin-bottom: 15px;
   background: #00bf49;
   width: auto;
 }

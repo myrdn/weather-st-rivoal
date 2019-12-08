@@ -109,6 +109,20 @@ body {
 	margin-right: -20px;
 }
 
+//Welcome Bubble
+
+.welcome-bubble {
+  @extend %bubbles-left;
+}
+
+.welcome-bubble p {
+  padding: 10px;
+}
+
+.welcome-bubble:after {
+  @extend %bubbles-after-left;
+}
+
 //First Bubble
 
 .speech-bubble {
@@ -183,6 +197,7 @@ body {
 
 .speech-bubble-6 {
   @extend %bubbles-right;
+  animation-delay: 6s;
 }
 
 .speech-bubble-6 p {

@@ -5,7 +5,7 @@ request.open('GET', requestURL);
 request.responseType = 'json';
 request.send();
 
-//About temperature
+//Function for temperature
 function temp() {
     const temperature = meteo.main['temp'];
     const textTemp = document.getElementById('general');
@@ -26,7 +26,7 @@ function temp() {
     }
 }
 
-//About wind speed
+//Function for wind speed
 function windy() {
     let wind = meteo.wind['speed'];
     wind = Math.round(3600 * wind / 1000);
@@ -46,7 +46,7 @@ function windy() {
     }
 }
 
-//About rain precipitations
+//Function for rain precipitations
 function precipitation() {
     const textRain = document.getElementById('rain');
     const textConseilRain = document.getElementById('conseils-rain');

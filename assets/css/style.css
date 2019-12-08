@@ -98,8 +98,16 @@ body {
   padding: 10px;
 }
 
+.speech-bubble {
+  animation-delay: 0.7s;
+}
+
 .speech-bubble p {
   padding: 10px;
+}
+
+.speech-bubble-2 {
+  animation-delay: 1.8s;
 }
 
 .speech-bubble-2 p {
@@ -110,8 +118,16 @@ body {
   padding: 10px;
 }
 
+.speech-bubble-4 {
+  animation-delay: 5s;
+}
+
 .speech-bubble-4 p {
   padding: 10px;
+}
+
+.speech-bubble-5 {
+  animation-delay: 6.5s;
 }
 
 .speech-bubble-5 p {
@@ -119,7 +135,7 @@ body {
 }
 
 .speech-bubble-6 {
-  animation-delay: 6s;
+  animation-delay: 7s;
 }
 
 .speech-bubble-6 p {
@@ -127,7 +143,7 @@ body {
 }
 
 .speech-bubble-7 {
-  animation-delay: 7s;
+  animation-delay: 7.8s;
 }
 
 .speech-bubble-7 p {

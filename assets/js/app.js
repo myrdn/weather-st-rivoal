@@ -77,7 +77,7 @@ request.onload = () => {
 //Visibilize hidden elements
 function visibilize() {
     var element = document.getElementById("anchor");
-    element.scrollIntoView({ behavior: "smooth", block: "end", inline: "nearest" });
+    element.scrollIntoView({ behavior: "smooth" });
 }
 
 //Check if element is in viewport
@@ -101,9 +101,13 @@ console.log(el);
 function checkAndGo() {
     if (isElementInViewport(el));
     else {
+        for (i = 0; i < bubbles.length; i++) {
         el.setAttribute("id", "anchor");
+        };
+        console.log(el);
         visibilize();
     }
 } 
 
-setTimeout(function () { checkAndGo(); }, 10000);
+setTimeout(function () { checkAndGo(); }, 3800);
+

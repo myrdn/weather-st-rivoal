@@ -40,9 +40,9 @@ body {
 //Container Bubbles
 
 @media only screen and (max-width: 450px) {
-     .container-bubbles {
-        width: 90% !important;
-      }
+  .container-bubbles {
+    width: 90% !important;
+  }
 }
 
 .container-bubbles {
@@ -80,33 +80,33 @@ body {
 }
 
 %bubbles-after-left {
-  content: '';
-	position: absolute;
-	left: 0;
-	top: 50%;
-	width: 0;
-	height: 0;
-	border: 20px solid transparent;
-	border-right-color: $pink-flamingo;
-	border-left: 0;
-	border-top: 0;
-	margin-top: -10px;
-	margin-left: -20px;
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 50%;
+  width: 0;
+  height: 0;
+  border: 20px solid transparent;
+  border-right-color: $pink-flamingo;
+  border-left: 0;
+  border-top: 0;
+  margin-top: -10px;
+  margin-left: -20px;
 }
 
 %bubbles-after-right {
-	content: '';
-	position: absolute;
-	right: 0;
-	top: 50%;
-	width: 0;
-	height: 0;
-	border: 20px solid transparent;
-	border-left-color: $messages;
-	border-right: 0;
-	border-top: 0;
-	margin-top: -10px;
-	margin-right: -20px;
+  content: "";
+  position: absolute;
+  right: 0;
+  top: 50%;
+  width: 0;
+  height: 0;
+  border: 20px solid transparent;
+  border-left-color: $messages;
+  border-right: 0;
+  border-top: 0;
+  margin-top: -10px;
+  margin-right: -20px;
 }
 
 //Welcome Bubble
@@ -127,6 +127,7 @@ body {
 
 .speech-bubble {
   @extend %bubbles-left;
+  animation-delay: 0.7s;
 }
 
 .speech-bubble p {
@@ -141,6 +142,7 @@ body {
 
 .speech-bubble-2 {
   @extend %bubbles-right;
+  animation-delay: 1.8s;
 }
 
 .speech-bubble-2 p {
@@ -169,6 +171,7 @@ body {
 
 .speech-bubble-4 {
   @extend %bubbles-right;
+  animation-delay: 5s;
 }
 
 .speech-bubble-4 p {
@@ -183,6 +186,7 @@ body {
 
 .speech-bubble-5 {
   @extend %bubbles-left;
+  animation-delay: 6.5s;
 }
 
 .speech-bubble-5 p {
@@ -197,7 +201,7 @@ body {
 
 .speech-bubble-6 {
   @extend %bubbles-right;
-  animation-delay: 6s;
+  animation-delay: 7s;
 }
 
 .speech-bubble-6 p {
@@ -212,7 +216,7 @@ body {
 
 .speech-bubble-7 {
   @extend %bubbles-left;
-  animation-delay: 7s;
+  animation-delay: 7.8s;
 }
 
 .speech-bubble-7 p {

@@ -45,7 +45,6 @@ body {
 .speech-bubble-5, .speech-bubble-3, .speech-bubble {
   position: relative;
   border-radius: 0.4em;
-  min-width: 150px;
   max-width: 300px;
   margin-right: auto;
   margin-left: 10px;
@@ -57,7 +56,6 @@ body {
 .speech-bubble-6, .speech-bubble-4, .speech-bubble-2 {
   position: relative;
   border-radius: 0.4em;
-  min-width: 150px;
   max-width: 300px;
   margin-right: 10px;
   margin-left: auto;

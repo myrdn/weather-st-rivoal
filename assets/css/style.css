@@ -150,4 +150,17 @@ body {
   padding: 10px;
 }
 
+.footer {
+  color: #7a7a7a;
+  padding: 5px;
+  font-size: 0.8em;
+  text-align: center;
+  margin-bottom: 10px;
+  animation-delay: 10s;
+}
+.footer a {
+  color: #7a7a7a;
+  text-decoration: none;
+}
+
 /*# sourceMappingURL=style.css.map */

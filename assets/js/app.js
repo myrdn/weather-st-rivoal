@@ -93,15 +93,16 @@ function isElementInViewport(el) {
 
 //For loop bubbles
 const bubbles = document.querySelectorAll(".bubble");
-for (i = 0; i < bubbles.length; i++){
-var el = bubbles[i];
+
+for (let i = 0; i < bubbles.length; i++){
+el = bubbles[i];
 console.log(el);
 }
 
 function checkAndGo() {
     if (isElementInViewport(el));
     else {
-        for (i = 0; i < bubbles.length; i++) {
+        for (let i = 0; i < bubbles.length; i++) {
         el.setAttribute("id", "anchor");
         };
         console.log(el);
@@ -110,4 +111,3 @@ function checkAndGo() {
 } 
 
 setTimeout(() => { checkAndGo(); }, 2900);
-

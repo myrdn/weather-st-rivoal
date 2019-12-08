@@ -43,8 +43,17 @@ request.onload = function () {
         textConseilWind.innerHTML = "C'est la tempête !";
     } 
     if (meteo.rain['1h'] !== undefined) {
-    var rain = meteo.rain['3h'];
-    console.log(rain);
+        var rain = meteo.rain['1h'];
+        var textRain = document.getElementById('rain');
+        textRain.innerHTML = rain + " mm de pluie sont tombés dans l'heure";
+        var textConseilRain = document.getElementById('conseils-rain');
+        if (rain <= 3) {
+            textConseilRain.innerHTML = "Bon il faut prendre un K-Way";
+        } else if (rain <= 7) {
+            textConseilRain.innerHTML = "T'as un parapluie ?";
+        } else if (rain >= 8) {
+            textConseilRain.innerHTML = "C'est le déluge";
+        }
     } else {
         console.log("il ne pleut pas!");
     }

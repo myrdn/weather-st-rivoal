@@ -182,7 +182,7 @@ body {
   position: relative;
   background: #ca66fa;
   border-radius: 0.4em;
-  width: 15vw;
+  width: 9vw;
   min-width: 140px;
   margin-right: auto;
   transition: transform 0.2s;
@@ -215,7 +215,7 @@ body {
   position: relative;
   background: #00bf49;
   border-radius: 0.4em;
-  width: 12vw;
+  width: 14vw;
   min-width: 150px;
   margin-left: auto;
   transition: transform 0.2s;

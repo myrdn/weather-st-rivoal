@@ -52,7 +52,8 @@ body {
   min-width: 150px;
   max-width: 300px;
   margin-right: auto;
-  margin-bottom: 30px;
+  margin-left: 10px;
+  margin-bottom: 20px;
   transition: transform 0.2s;
   background: #ca66fa;
   width: auto;
@@ -63,8 +64,9 @@ body {
   border-radius: 0.4em;
   min-width: 150px;
   max-width: 300px;
+  margin-right: 10px;
   margin-left: auto;
-  margin-bottom: 30px;
+  margin-bottom: 20px;
   transition: transform 0.2s;
   background: #00bf49;
   width: auto;
@@ -73,31 +75,31 @@ body {
 .speech-bubble-5:after, .speech-bubble-3:after, .speech-bubble:after {
   content: "";
   position: absolute;
-  bottom: 0;
-  left: 50%;
+  left: 0;
+  top: 50%;
   width: 0;
   height: 0;
-  border: 21px solid transparent;
-  border-top-color: #ca66fa;
-  border-bottom: 0;
+  border: 20px solid transparent;
+  border-right-color: #ca66fa;
   border-left: 0;
-  margin-left: -10.5px;
-  margin-bottom: -21px;
+  border-top: 0;
+  margin-top: -10px;
+  margin-left: -20px;
 }
 
 .speech-bubble-6:after, .speech-bubble-4:after, .speech-bubble-2:after {
   content: "";
   position: absolute;
-  bottom: 0;
-  left: 50%;
+  right: 0;
+  top: 50%;
   width: 0;
   height: 0;
-  border: 21px solid transparent;
-  border-top-color: #00bf49;
-  border-bottom: 0;
+  border: 20px solid transparent;
+  border-left-color: #00bf49;
   border-right: 0;
-  margin-left: -10.5px;
-  margin-bottom: -21px;
+  border-top: 0;
+  margin-top: -10px;
+  margin-right: -20px;
 }
 
 .speech-bubble:hover {

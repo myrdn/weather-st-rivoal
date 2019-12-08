@@ -69,7 +69,8 @@ body {
   min-width: 150px;
   max-width: 300px;
   margin-right: auto;
-  margin-bottom: 30px;
+  margin-left: 10px;
+  margin-bottom: 20px;
   transition: transform 0.2s;
   background: $pink-flamingo;
   width: auto;
@@ -80,41 +81,42 @@ body {
   border-radius: 0.4em;
   min-width: 150px;
   max-width: 300px;
+  margin-right: 10px;
   margin-left: auto;
-  margin-bottom: 30px;
+  margin-bottom: 20px;
   transition: transform 0.2s;
   background: $messages;
   width: auto;
 }
 
 %bubbles-after-left {
-  content: "";
-  position: absolute;
-  bottom: 0;
-  left: 50%;
-  width: 0;
-  height: 0;
-  border: 21px solid transparent;
-  border-top-color: $pink-flamingo;
-  border-bottom: 0;
-  border-left: 0;
-  margin-left: -10.5px;
-  margin-bottom: -21px;
+  content: '';
+	position: absolute;
+	left: 0;
+	top: 50%;
+	width: 0;
+	height: 0;
+	border: 20px solid transparent;
+	border-right-color: $pink-flamingo;
+	border-left: 0;
+	border-top: 0;
+	margin-top: -10px;
+	margin-left: -20px;
 }
 
 %bubbles-after-right {
-  content: "";
-  position: absolute;
-  bottom: 0;
-  left: 50%;
-  width: 0;
-  height: 0;
-  border: 21px solid transparent;
-  border-top-color: $messages;
-  border-bottom: 0;
-  border-right: 0;
-  margin-left: -10.5px;
-  margin-bottom: -21px;
+	content: '';
+	position: absolute;
+	right: 0;
+	top: 50%;
+	width: 0;
+	height: 0;
+	border: 20px solid transparent;
+	border-left-color: $messages;
+	border-right: 0;
+	border-top: 0;
+	margin-top: -10px;
+	margin-right: -20px;
 }
 
 //First Bubble

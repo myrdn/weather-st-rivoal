@@ -67,18 +67,24 @@ body {
   position: relative;
   border-radius: 0.4em;
   min-width: 150px;
+  max-width: 300px;
   margin-right: auto;
+  margin-bottom: 30px;
   transition: transform 0.2s;
   background: $pink-flamingo;
+  width: auto;
 }
 
 %bubbles-right {
   position: relative;
   border-radius: 0.4em;
   min-width: 150px;
+  max-width: 300px;
   margin-left: auto;
+  margin-bottom: 30px;
   transition: transform 0.2s;
   background: $messages;
+  width: auto;
 }
 
 %bubbles-after-left {
@@ -115,7 +121,6 @@ body {
 
 .speech-bubble {
   @extend %bubbles-left;
-  width: 13vw;
 }
 
 .speech-bubble:hover {
@@ -134,7 +139,6 @@ body {
 
 .speech-bubble-2 {
   @extend %bubbles-right;
-  width: 17vw;
 }
 
 .speech-bubble-2:hover {
@@ -153,7 +157,6 @@ body {
 
 .speech-bubble-3 {
   @extend %bubbles-left;
-  width: 15vw;
 }
 
 .speech-bubble-3:hover {
@@ -172,7 +175,6 @@ body {
 
 .speech-bubble-4 {
   @extend %bubbles-right;
-  width: 12vw;
 }
 
 .speech-bubble-4:hover {
@@ -191,7 +193,6 @@ body {
 
 .speech-bubble-5 {
   @extend %bubbles-left;
-  width: 9vw;
 }
 
 .speech-bubble-5:hover {
@@ -210,7 +211,6 @@ body {
 
 .speech-bubble-6 {
   @extend %bubbles-right;
-  width: 14vw;
 }
 
 .speech-bubble-6:hover {

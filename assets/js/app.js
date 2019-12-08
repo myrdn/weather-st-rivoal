@@ -1,16 +1,16 @@
 //OpenWeatherMap API call
-var requestURL = "http://api.openweathermap.org/data/2.5/weather?q=Saint-Rivoal,fr&APPID=***REMOVED***&units=metric";
-var request = new XMLHttpRequest();
+const requestURL = "http://api.openweathermap.org/data/2.5/weather?q=Saint-Rivoal,fr&APPID=***REMOVED***&units=metric";
+const request = new XMLHttpRequest();
 request.open('GET', requestURL);
 request.responseType = 'json';
 request.send();
 
 //About temperature
 function temp() {
-    var temperature = meteo.main['temp'];
-    var textTemp = document.getElementById('general');
-    textTemp.innerHTML = "Il fait actuellement " + "<b>" + temperature + "°C</b>";
-    var textConseil = document.getElementById('conseils');
+    const temperature = meteo.main['temp'];
+    const textTemp = document.getElementById('general');
+    textTemp.innerHTML = `Il fait actuellement <b>${temperature}°C</b>`;
+    const textConseil = document.getElementById('conseils');
     if (temperature <= 0) {
         textConseil.innerHTML = "Il gèle rentre ta verveine";
     } else if (temperature <= 6) {
@@ -28,11 +28,11 @@ function temp() {
 
 //About wind speed
 function windy() {
-    var wind = meteo.wind['speed'];
+    let wind = meteo.wind['speed'];
     wind = Math.round(3600 * wind / 1000);
-    var textWind = document.getElementById('wind');
-    textWind.innerHTML = "Le vent souffle à " + "<b>" + wind + "km/h</b>";
-    var textConseilWind = document.getElementById('conseils-wind');
+    const textWind = document.getElementById('wind');
+    textWind.innerHTML = `Le vent souffle à <b>${wind}km/h</b>`;
+    const textConseilWind = document.getElementById('conseils-wind');
     if (wind == 0) {
         textConseilWind.innerHTML = "Pas un brin de vent!";
     } else if (wind <= 20) {
@@ -48,11 +48,11 @@ function windy() {
 
 //About rain precipitations
 function precipitation() {
-    var textRain = document.getElementById('rain');
-    var textConseilRain = document.getElementById('conseils-rain');
+    const textRain = document.getElementById('rain');
+    const textConseilRain = document.getElementById('conseils-rain');
     if (meteo.rain !== undefined) {
-        var rain = meteo.rain['3h'];
-        textRain.innerHTML = rain + " mm de pluie sont tombés";
+        const rain = meteo.rain['3h'];
+        textRain.innerHTML = `${rain} mm de pluie sont tombés`;
         if (rain <= 3) {
             textConseilRain.innerHTML = "Bon il faut prendre un K-Way";
         } else if (rain <= 7) {
@@ -67,7 +67,7 @@ function precipitation() {
 }
 
 //Main function
-request.onload = function () {
+request.onload = () => {
     meteo = request.response;
     temp();
     windy();

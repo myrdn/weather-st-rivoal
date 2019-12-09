@@ -38,7 +38,7 @@ function windy() {
     } else if (wind <= 20) {
         textConseilWind.innerHTML = "Tu ne risques pas de t'envoler!";
     } else if (wind <= 40) {
-        textConseilWind.innerHTML = "Regardes les branches s'agiter...";
+        textConseilWind.innerHTML = "Regarde les branches s'agiter...";
     } else if (wind <= 70) {
         textConseilWind.innerHTML = "Attention aux branches sur la route !";
     } else if (wind > 70) {

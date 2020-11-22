@@ -14,4 +14,5 @@ request.responseType = 'json';
 request.send();
 ```  
 </br>
+
 ![alt text](screenshot.png)

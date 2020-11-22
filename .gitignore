@@ -64,3 +64,6 @@ Temporary Items
 *.http
 
 
+# API call #
+
+assets/js/apicall.js

@@ -13,5 +13,5 @@ request.open('GET', requestURL);
 request.responseType = 'json';
 request.send();
 ```  
-
+</br>
 ![alt text](screenshot.png)
